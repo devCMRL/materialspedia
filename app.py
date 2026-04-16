@@ -13,10 +13,15 @@ def load_tree() -> Dict:
         return json.load(f)
 
 
-def flatten_tree(node: Dict, path: Optional[List[str]] = None, top_branch: Optional[str] = None) -> List[Dict]:
+def flatten_tree(
+    node: Dict,
+    path: Optional[List[str]] = None,
+    top_branch: Optional[str] = None,
+) -> List[Dict]:
     path = (path or []) + [node["name"]]
     if len(path) >= 2 and top_branch is None:
         top_branch = path[1]
+
     record = {
         "id": node["id"],
         "name": node["name"],
@@ -27,34 +32,46 @@ def flatten_tree(node: Dict, path: Optional[List[str]] = None, top_branch: Optio
         "top_branch": top_branch or node["name"],
         "children_count": len(node.get("children", [])),
     }
+
     rows = [record]
     for child in node.get("children", []):
         rows.extend(flatten_tree(child, path, top_branch))
     return rows
 
 
-def build_index(node: Dict, index: Optional[Dict[str, Dict]] = None, parent: Optional[str] = None) -> Dict[str, Dict]:
+def build_index(
+    node: Dict,
+    index: Optional[Dict[str, Dict]] = None,
+    parent: Optional[str] = None,
+) -> Dict[str, Dict]:
     index = index or {}
     copied = dict(node)
     copied["_parent"] = parent
     index[node["id"]] = copied
+
     for child in node.get("children", []):
         build_index(child, index, node["id"])
+
     return index
 
 
 def search_nodes(records: List[Dict], query: str, branch_filter: List[str]) -> List[Dict]:
     q = query.strip().lower()
     matches = []
+
     for rec in records:
         if branch_filter and rec["top_branch"] not in branch_filter and rec["depth"] != 0:
             continue
-        haystack = " ".join([
-            rec["name"],
-            rec["description"],
-            " ".join(rec.get("tags", [])),
-            " ".join(rec.get("path", [])),
-        ]).lower()
+
+        haystack = " ".join(
+            [
+                rec["name"],
+                rec["description"],
+                " ".join(rec.get("tags", [])),
+                " ".join(rec.get("path", [])),
+            ]
+        ).lower()
+
         if q in haystack:
             score = 0
             if q == rec["name"].lower():
@@ -65,6 +82,7 @@ def search_nodes(records: List[Dict], query: str, branch_filter: List[str]) -> L
                 score += 5
             score -= rec["depth"] * 0.2
             matches.append((score, rec))
+
     matches.sort(key=lambda x: (-x[0], x[1]["name"]))
     return [rec for _, rec in matches[:25]]
 
@@ -76,10 +94,12 @@ def children_of(node: Dict) -> List[Dict]:
 def breadcrumb(index: Dict[str, Dict], node_id: str) -> List[Dict]:
     trail = []
     current = index[node_id]
+
     while current:
         trail.append(current)
         parent_id = current.get("_parent")
         current = index.get(parent_id) if parent_id else None
+
     trail.reverse()
     return trail
 
@@ -88,17 +108,20 @@ def subtree_preview(node: Dict, depth: int = 0, max_depth: int = 2) -> List[str]
     lines = []
     if depth > max_depth:
         return lines
+
     prefix = "  " * depth + ("• " if depth > 0 else "")
     if depth == 0:
         lines.append(node["name"])
     else:
         lines.append(prefix + node["name"])
+
     for child in node.get("children", []):
         lines.extend(subtree_preview(child, depth + 1, max_depth))
+
     return lines
 
 
-def set_selected(node_id: str):
+def set_selected(node_id: str) -> None:
     st.session_state.selected_id = node_id
 
 
@@ -113,7 +136,7 @@ index = build_index(tree)
 records = flatten_tree(tree)
 top_branches = [child["name"] for child in tree.get("children", [])]
 
-if "selected_id" not in st.session_state:
+if "selected_id" not in st.session_state or st.session_state.selected_id not in index:
     st.session_state.selected_id = tree["id"]
 
 selected = index[st.session_state.selected_id]
@@ -123,30 +146,51 @@ st.caption("Starter app for an interactive, browser-based materials science mind
 
 with st.sidebar:
     st.header("Search + filters")
-    query = st.text_input("Search topics", placeholder="e.g. dislocations, CALPHAD, CVD, piezoelectric")
+
+    query = st.text_input(
+        "Search topics",
+        placeholder="e.g. dislocations, CALPHAD, CVD, piezoelectric",
+    )
+
     selected_branches = st.multiselect(
         "Top-level branches",
         options=top_branches,
         default=top_branches,
     )
-    if st.button("Reset to root", use_container_width=True):
-        set_selected(tree["id"])
+
+    st.button(
+        "Reset to root",
+        use_container_width=True,
+        on_click=set_selected,
+        args=(tree["id"],),
+    )
 
     st.divider()
     st.subheader("Quick navigation")
     for branch in tree.get("children", []):
-        if st.button(branch["name"], key=f"nav_{branch['id']}", use_container_width=True):
-            set_selected(branch["id"])
+        st.button(
+            branch["name"],
+            key=f"nav_{branch['id']}",
+            use_container_width=True,
+            on_click=set_selected,
+            args=(branch["id"],),
+        )
 
     if query.strip():
         st.divider()
         st.subheader("Search results")
         results = search_nodes(records, query, selected_branches)
+
         if results:
             for rec in results:
                 label = f"{rec['name']}  ·  {rec['top_branch']}"
-                if st.button(label, key=f"search_{rec['id']}", use_container_width=True):
-                    set_selected(rec["id"])
+                st.button(
+                    label,
+                    key=f"search_{rec['id']}",
+                    use_container_width=True,
+                    on_click=set_selected,
+                    args=(rec["id"],),
+                )
         else:
             st.info("No matches found. Try a broader term.")
 
@@ -157,13 +201,20 @@ with left:
     st.markdown(" / ".join([item["name"] for item in trail]))
 
     top1, top2 = st.columns([3, 1])
+
     with top1:
         st.subheader(selected["name"])
         st.write(selected.get("description", ""))
+
     with top2:
         parent_id = selected.get("_parent")
-        if parent_id and st.button("⬅ Back to parent", use_container_width=True):
-            set_selected(parent_id)
+        if parent_id:
+            st.button(
+                "⬅ Back to parent",
+                use_container_width=True,
+                on_click=set_selected,
+                args=(parent_id,),
+            )
 
     meta_cols = st.columns(3)
     meta_cols[0].metric("Children", len(selected.get("children", [])))
@@ -175,6 +226,7 @@ with left:
 
     st.markdown("### Explore children")
     kids = children_of(selected)
+
     if kids:
         cols = st.columns(3)
         for i, child in enumerate(kids):
@@ -182,8 +234,13 @@ with left:
                 with st.container(border=True):
                     st.markdown(f"**{child['name']}**")
                     st.write(child.get("description", ""))
-                    if st.button("Open", key=f"open_{child['id']}", use_container_width=True):
-                        set_selected(child["id"])
+                    st.button(
+                        "Open",
+                        key=f"open_{child['id']}",
+                        use_container_width=True,
+                        on_click=set_selected,
+                        args=(child["id"],),
+                    )
     else:
         st.success("This is currently a leaf topic. You can go back to the parent or search for another branch.")
 
@@ -212,8 +269,13 @@ with right:
     if selected.get("children"):
         st.markdown("### Suggested next clicks")
         for child in selected.get("children", [])[:8]:
-            if st.button(f"→ {child['name']}", key=f"next_{child['id']}", use_container_width=True):
-                set_selected(child["id"])
+            st.button(
+                f"→ {child['name']}",
+                key=f"next_{child['id']}",
+                use_container_width=True,
+                on_click=set_selected,
+                args=(child["id"],),
+            )
 
 st.divider()
 with st.expander("About this starter app"):
