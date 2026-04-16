@@ -1,0 +1,1310 @@
+{
+  "name": "Materials Science and Engineering",
+  "description": "An interactive knowledge map of materials science spanning foundations, core concepts, material classes, processing, characterization, computation, AI, applications, and research frontiers.",
+  "tags": [
+    "materials science",
+    "mind map",
+    "interactive",
+    "curriculum",
+    "research"
+  ],
+  "children": [
+    {
+      "name": "Foundations",
+      "description": "Mathematics, physics, chemistry, engineering, and computing that support the whole field.",
+      "tags": [
+        "basics",
+        "prerequisites"
+      ],
+      "children": [
+        {
+          "name": "Mathematics",
+          "description": "The mathematical toolkit used across mechanics, transport, simulation, statistics, and materials data science.",
+          "tags": [
+            "math"
+          ],
+          "children": [
+            {
+              "name": "Calculus",
+              "description": "Differentiation, integration, multivariable calculus, and vector calculus for transport, field equations, and optimization.",
+              "tags": [
+                "calculus"
+              ],
+              "id": "materials-science-and-engineering/foundations/mathematics/calculus"
+            },
+            {
+              "name": "Differential Equations",
+              "description": "ODEs and PDEs for diffusion, heat flow, mechanics, kinetics, and field-based models.",
+              "tags": [
+                "ODE",
+                "PDE"
+              ],
+              "id": "materials-science-and-engineering/foundations/mathematics/differential-equations"
+            },
+            {
+              "name": "Linear Algebra",
+              "description": "Matrices, eigenvalues, tensors, and vector spaces for quantum mechanics, DFT, elasticity, and machine learning.",
+              "tags": [
+                "matrices",
+                "tensors"
+              ],
+              "id": "materials-science-and-engineering/foundations/mathematics/linear-algebra"
+            },
+            {
+              "name": "Probability and Statistics",
+              "description": "Essential for uncertainty, experimental design, defect populations, reliability, and materials informatics.",
+              "tags": [
+                "statistics",
+                "uncertainty"
+              ],
+              "id": "materials-science-and-engineering/foundations/mathematics/probability-and-statistics"
+            },
+            {
+              "name": "Numerical Methods",
+              "description": "Discretization, interpolation, optimization, and solvers for simulation and data analysis.",
+              "tags": [
+                "computation"
+              ],
+              "id": "materials-science-and-engineering/foundations/mathematics/numerical-methods"
+            }
+          ],
+          "id": "materials-science-and-engineering/foundations/mathematics"
+        },
+        {
+          "name": "Physics",
+          "description": "Physical laws governing structure, bonding, properties, transport, and collective behavior in materials.",
+          "tags": [
+            "physics"
+          ],
+          "children": [
+            {
+              "name": "Classical Mechanics",
+              "description": "Force, momentum, deformation, and continuum response.",
+              "tags": [
+                "mechanics"
+              ],
+              "id": "materials-science-and-engineering/foundations/physics/classical-mechanics"
+            },
+            {
+              "name": "Electricity and Magnetism",
+              "description": "Fields, charge transport, dielectric response, and magnetic behavior.",
+              "tags": [
+                "E&M"
+              ],
+              "id": "materials-science-and-engineering/foundations/physics/electricity-and-magnetism"
+            },
+            {
+              "name": "Thermodynamics and Statistical Mechanics",
+              "description": "Energy, entropy, free energy, equilibrium, fluctuations, and ensembles.",
+              "tags": [
+                "thermo",
+                "stat mech"
+              ],
+              "id": "materials-science-and-engineering/foundations/physics/thermodynamics-and-statistical-mechanics"
+            },
+            {
+              "name": "Quantum Mechanics",
+              "description": "The foundation for bonding, electronic structure, band theory, and spectroscopy.",
+              "tags": [
+                "quantum"
+              ],
+              "id": "materials-science-and-engineering/foundations/physics/quantum-mechanics"
+            },
+            {
+              "name": "Solid State and Condensed Matter Physics",
+              "description": "Crystals, band structure, phonons, scattering, superconductivity, and correlated matter.",
+              "tags": [
+                "solid state",
+                "condensed matter"
+              ],
+              "id": "materials-science-and-engineering/foundations/physics/solid-state-and-condensed-matter-physics"
+            }
+          ],
+          "id": "materials-science-and-engineering/foundations/physics"
+        },
+        {
+          "name": "Chemistry",
+          "description": "Chemical principles behind synthesis, bonding, phase stability, electrochemistry, and surfaces.",
+          "tags": [
+            "chemistry"
+          ],
+          "children": [
+            {
+              "name": "General Chemistry",
+              "description": "Atomic structure, bonding, stoichiometry, and reaction fundamentals.",
+              "tags": [
+                "general"
+              ],
+              "id": "materials-science-and-engineering/foundations/chemistry/general-chemistry"
+            },
+            {
+              "name": "Physical Chemistry",
+              "description": "Chemical thermodynamics, kinetics, and molecular interpretation of matter.",
+              "tags": [
+                "physical chemistry"
+              ],
+              "id": "materials-science-and-engineering/foundations/chemistry/physical-chemistry"
+            },
+            {
+              "name": "Inorganic Chemistry",
+              "description": "Coordination, solid-state chemistry, and functional inorganic materials.",
+              "tags": [
+                "inorganic"
+              ],
+              "id": "materials-science-and-engineering/foundations/chemistry/inorganic-chemistry"
+            },
+            {
+              "name": "Organic and Polymer Chemistry",
+              "description": "Macromolecules, polymerization, network formation, and molecular design.",
+              "tags": [
+                "polymer"
+              ],
+              "id": "materials-science-and-engineering/foundations/chemistry/organic-and-polymer-chemistry"
+            },
+            {
+              "name": "Electrochemistry and Surface Chemistry",
+              "description": "Redox reactions, interfaces, corrosion, batteries, and catalysis.",
+              "tags": [
+                "electrochemistry",
+                "surface"
+              ],
+              "id": "materials-science-and-engineering/foundations/chemistry/electrochemistry-and-surface-chemistry"
+            }
+          ],
+          "id": "materials-science-and-engineering/foundations/chemistry"
+        },
+        {
+          "name": "Engineering and Computing",
+          "description": "Engineering literacy and computational fluency needed for experiments, modeling, and software-driven materials work.",
+          "tags": [
+            "engineering",
+            "computing"
+          ],
+          "children": [
+            {
+              "name": "Mechanics of Materials",
+              "description": "Stress, strain, constitutive behavior, and failure concepts used throughout mechanical metallurgy and design.",
+              "tags": [
+                "mechanics"
+              ],
+              "id": "materials-science-and-engineering/foundations/engineering-and-computing/mechanics-of-materials"
+            },
+            {
+              "name": "Manufacturing Basics",
+              "description": "How shaping, joining, and processing routes affect microstructure and performance.",
+              "tags": [
+                "manufacturing"
+              ],
+              "id": "materials-science-and-engineering/foundations/engineering-and-computing/manufacturing-basics"
+            },
+            {
+              "name": "Instrumentation and Laboratory Practice",
+              "description": "Measurement, calibration, uncertainty, and safe experimentation.",
+              "tags": [
+                "instrumentation",
+                "lab"
+              ],
+              "id": "materials-science-and-engineering/foundations/engineering-and-computing/instrumentation-and-laboratory-practice"
+            },
+            {
+              "name": "Programming and Scientific Computing",
+              "description": "Python, data workflows, automation, APIs, and reproducible research.",
+              "tags": [
+                "python",
+                "scientific computing"
+              ],
+              "id": "materials-science-and-engineering/foundations/engineering-and-computing/programming-and-scientific-computing"
+            }
+          ],
+          "id": "materials-science-and-engineering/foundations/engineering-and-computing"
+        }
+      ],
+      "id": "materials-science-and-engineering/foundations"
+    },
+    {
+      "name": "Core Principles",
+      "description": "The common language of the field: processing, structure, defects, properties, and performance across length and time scales.",
+      "tags": [
+        "core",
+        "unifying concepts"
+      ],
+      "children": [
+        {
+          "name": "Processing-Structure-Properties-Performance",
+          "description": "The foundational loop showing how processing choices create structure, which controls properties and real-world performance.",
+          "tags": [
+            "PSPP"
+          ],
+          "id": "materials-science-and-engineering/core-principles/processing-structure-properties-performance"
+        },
+        {
+          "name": "Composition and Microstructure",
+          "description": "How chemistry, phases, grains, interfaces, and texture collectively define a material state.",
+          "tags": [
+            "microstructure",
+            "composition"
+          ],
+          "children": [
+            {
+              "name": "Crystallography",
+              "description": "Lattices, symmetry, planes, directions, and crystal systems.",
+              "tags": [
+                "crystals"
+              ],
+              "id": "materials-science-and-engineering/core-principles/composition-and-microstructure/crystallography"
+            },
+            {
+              "name": "Phase Equilibria",
+              "description": "Stable phases, miscibility, order-disorder, and transformations.",
+              "tags": [
+                "phase diagrams"
+              ],
+              "id": "materials-science-and-engineering/core-principles/composition-and-microstructure/phase-equilibria"
+            },
+            {
+              "name": "Texture and Anisotropy",
+              "description": "Preferred orientation and direction-dependent properties.",
+              "tags": [
+                "texture"
+              ],
+              "id": "materials-science-and-engineering/core-principles/composition-and-microstructure/texture-and-anisotropy"
+            }
+          ],
+          "id": "materials-science-and-engineering/core-principles/composition-and-microstructure"
+        },
+        {
+          "name": "Defects",
+          "description": "Imperfections that strongly control diffusion, deformation, transformation, transport, and failure.",
+          "tags": [
+            "defects"
+          ],
+          "children": [
+            {
+              "name": "Point Defects",
+              "description": "Vacancies, interstitials, substitutional species, charged defects, and defect chemistry.",
+              "tags": [
+                "vacancies",
+                "interstitials"
+              ],
+              "id": "materials-science-and-engineering/core-principles/defects/point-defects"
+            },
+            {
+              "name": "Line Defects",
+              "description": "Dislocations, Burgers vectors, slip, and dislocation interactions.",
+              "tags": [
+                "dislocations"
+              ],
+              "id": "materials-science-and-engineering/core-principles/defects/line-defects"
+            },
+            {
+              "name": "Planar Defects",
+              "description": "Grain boundaries, stacking faults, twins, and interfaces.",
+              "tags": [
+                "grain boundaries",
+                "twins"
+              ],
+              "id": "materials-science-and-engineering/core-principles/defects/planar-defects"
+            },
+            {
+              "name": "Volume Defects",
+              "description": "Voids, precipitates, inclusions, second phases, and cracks.",
+              "tags": [
+                "voids",
+                "precipitates"
+              ],
+              "id": "materials-science-and-engineering/core-principles/defects/volume-defects"
+            }
+          ],
+          "id": "materials-science-and-engineering/core-principles/defects"
+        },
+        {
+          "name": "Thermodynamics, Kinetics, and Transport",
+          "description": "Free energy tells what can happen; kinetics and transport tell how fast and by what path it occurs.",
+          "tags": [
+            "thermo",
+            "kinetics",
+            "transport"
+          ],
+          "children": [
+            {
+              "name": "Thermodynamics",
+              "description": "Chemical potential, free energy, equilibrium, activities, and driving forces.",
+              "tags": [
+                "thermodynamics"
+              ],
+              "id": "materials-science-and-engineering/core-principles/thermodynamics-kinetics-and-transport/thermodynamics"
+            },
+            {
+              "name": "Kinetics",
+              "description": "Reaction rates, nucleation, growth, coarsening, and transformation pathways.",
+              "tags": [
+                "kinetics"
+              ],
+              "id": "materials-science-and-engineering/core-principles/thermodynamics-kinetics-and-transport/kinetics"
+            },
+            {
+              "name": "Diffusion",
+              "description": "Atomic mobility in solids, liquids, and along defects or interfaces.",
+              "tags": [
+                "diffusion"
+              ],
+              "id": "materials-science-and-engineering/core-principles/thermodynamics-kinetics-and-transport/diffusion"
+            },
+            {
+              "name": "Heat, Mass, and Momentum Transfer",
+              "description": "Transport foundations for processing, extraction, and coating systems.",
+              "tags": [
+                "transport phenomena"
+              ],
+              "id": "materials-science-and-engineering/core-principles/thermodynamics-kinetics-and-transport/heat-mass-and-momentum-transfer"
+            }
+          ],
+          "id": "materials-science-and-engineering/core-principles/thermodynamics-kinetics-and-transport"
+        }
+      ],
+      "id": "materials-science-and-engineering/core-principles"
+    },
+    {
+      "name": "Materials Classes",
+      "description": "The traditional and modern classes of materials studied in curricula and research programs.",
+      "tags": [
+        "classes"
+      ],
+      "children": [
+        {
+          "name": "Metallurgy",
+          "description": "Metals and alloys, including extraction, processing, microstructure, deformation, and failure.",
+          "tags": [
+            "metals",
+            "alloys"
+          ],
+          "children": [
+            {
+              "name": "Extractive Metallurgy",
+              "description": "Mineral processing, pyro-, hydro-, and electrometallurgy; refining and recovery.",
+              "tags": [
+                "extraction"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/metallurgy/extractive-metallurgy"
+            },
+            {
+              "name": "Physical Metallurgy",
+              "description": "Phase transformations, diffusion, recovery, recrystallization, grain growth, and heat treatment.",
+              "tags": [
+                "physical metallurgy"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/metallurgy/physical-metallurgy"
+            },
+            {
+              "name": "Mechanical Metallurgy",
+              "description": "Stress, strain, dislocations, work hardening, creep, fatigue, fracture, and failure analysis.",
+              "tags": [
+                "mechanical metallurgy"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/metallurgy/mechanical-metallurgy"
+            },
+            {
+              "name": "Ferrous Metallurgy",
+              "description": "Ironmaking, steelmaking, secondary refining, stainless steels, and advanced steels.",
+              "tags": [
+                "steel"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/metallurgy/ferrous-metallurgy"
+            },
+            {
+              "name": "Non-Ferrous Metallurgy",
+              "description": "Aluminum, copper, magnesium, titanium, nickel, and specialty alloy systems.",
+              "tags": [
+                "non-ferrous"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/metallurgy/non-ferrous-metallurgy"
+            }
+          ],
+          "id": "materials-science-and-engineering/materials-classes/metallurgy"
+        },
+        {
+          "name": "Ceramics and Glass",
+          "description": "Bonding-rich inorganic solids, from structural ceramics and refractories to electroceramics and glasses.",
+          "tags": [
+            "ceramics",
+            "glass"
+          ],
+          "children": [
+            {
+              "name": "Structural Ceramics",
+              "description": "High hardness, thermal stability, wear resistance, and brittle failure behavior.",
+              "tags": [
+                "structural ceramics"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/ceramics-and-glass/structural-ceramics"
+            },
+            {
+              "name": "Electronic Ceramics",
+              "description": "Ferroelectrics, dielectrics, piezoelectrics, ionic conductors, and functional oxides.",
+              "tags": [
+                "electroceramics"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/ceramics-and-glass/electronic-ceramics"
+            },
+            {
+              "name": "Refractories",
+              "description": "High-temperature ceramics for furnaces, reactors, and metallurgical systems.",
+              "tags": [
+                "refractories"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/ceramics-and-glass/refractories"
+            },
+            {
+              "name": "Glass and Glass-Ceramics",
+              "description": "Amorphous structure, optical behavior, thermal processing, and controlled crystallization.",
+              "tags": [
+                "glass"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/ceramics-and-glass/glass-and-glass-ceramics"
+            }
+          ],
+          "id": "materials-science-and-engineering/materials-classes/ceramics-and-glass"
+        },
+        {
+          "name": "Polymers and Soft Matter",
+          "description": "Macromolecular materials with strong links to chemistry, rheology, viscoelasticity, and processing.",
+          "tags": [
+            "polymers",
+            "soft matter"
+          ],
+          "children": [
+            {
+              "name": "Polymer Physics",
+              "description": "Chain conformations, transitions, viscoelasticity, and molecular mobility.",
+              "tags": [
+                "polymer physics"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/polymers-and-soft-matter/polymer-physics"
+            },
+            {
+              "name": "Polymer Processing",
+              "description": "Extrusion, molding, cure, additive manufacturing, and structure development during flow.",
+              "tags": [
+                "processing"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/polymers-and-soft-matter/polymer-processing"
+            },
+            {
+              "name": "Elastomers and Gels",
+              "description": "Soft, deformable networks and swelling-responsive systems.",
+              "tags": [
+                "elastomers",
+                "hydrogels"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/polymers-and-soft-matter/elastomers-and-gels"
+            }
+          ],
+          "id": "materials-science-and-engineering/materials-classes/polymers-and-soft-matter"
+        },
+        {
+          "name": "Composites",
+          "description": "Multi-phase materials designed to combine stiffness, strength, toughness, or multifunctionality.",
+          "tags": [
+            "composites"
+          ],
+          "children": [
+            {
+              "name": "Polymer Matrix Composites",
+              "description": "Fiber-reinforced lightweight systems common in aerospace and sporting structures.",
+              "tags": [
+                "PMC"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/composites/polymer-matrix-composites"
+            },
+            {
+              "name": "Metal Matrix Composites",
+              "description": "Stiff, wear-resistant systems for structural and thermal applications.",
+              "tags": [
+                "MMC"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/composites/metal-matrix-composites"
+            },
+            {
+              "name": "Ceramic Matrix Composites",
+              "description": "High-temperature composite systems with improved damage tolerance.",
+              "tags": [
+                "CMC"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/composites/ceramic-matrix-composites"
+            }
+          ],
+          "id": "materials-science-and-engineering/materials-classes/composites"
+        },
+        {
+          "name": "Electronic, Magnetic, and Functional Materials",
+          "description": "Materials where electrical, optical, magnetic, or electromechanical response is the main focus.",
+          "tags": [
+            "functional materials"
+          ],
+          "children": [
+            {
+              "name": "Semiconductors",
+              "description": "Band structure, doping, defects, heterostructures, and electronic devices.",
+              "tags": [
+                "semiconductors"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/electronic-magnetic-and-functional-materials/semiconductors"
+            },
+            {
+              "name": "Ferroelectrics and Piezoelectrics",
+              "description": "Polarization switching, domain behavior, and electromechanical coupling.",
+              "tags": [
+                "ferroelectric",
+                "piezoelectric"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/electronic-magnetic-and-functional-materials/ferroelectrics-and-piezoelectrics"
+            },
+            {
+              "name": "Magnetic Materials",
+              "description": "Domains, spin interactions, magnetic anisotropy, and magnetocaloric effects.",
+              "tags": [
+                "magnetism"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/electronic-magnetic-and-functional-materials/magnetic-materials"
+            },
+            {
+              "name": "Optoelectronic Materials",
+              "description": "Absorption, emission, excitons, and device-relevant optical response.",
+              "tags": [
+                "optoelectronics"
+              ],
+              "id": "materials-science-and-engineering/materials-classes/electronic-magnetic-and-functional-materials/optoelectronic-materials"
+            }
+          ],
+          "id": "materials-science-and-engineering/materials-classes/electronic-magnetic-and-functional-materials"
+        },
+        {
+          "name": "Biomaterials",
+          "description": "Materials for implants, tissue interaction, drug delivery, and biointerfaces.",
+          "tags": [
+            "biomaterials"
+          ],
+          "id": "materials-science-and-engineering/materials-classes/biomaterials"
+        },
+        {
+          "name": "Energy Materials",
+          "description": "Battery, solar, thermoelectric, catalyst, fuel-cell, and hydrogen materials.",
+          "tags": [
+            "energy"
+          ],
+          "id": "materials-science-and-engineering/materials-classes/energy-materials"
+        },
+        {
+          "name": "Nanomaterials and 2D Materials",
+          "description": "Size-dependent materials, surfaces, nanostructures, and van der Waals systems.",
+          "tags": [
+            "nano",
+            "2D"
+          ],
+          "id": "materials-science-and-engineering/materials-classes/nanomaterials-and-2d-materials"
+        }
+      ],
+      "id": "materials-science-and-engineering/materials-classes"
+    },
+    {
+      "name": "Synthesis and Processing",
+      "description": "How materials are created, transformed, deposited, densified, joined, and scaled up.",
+      "tags": [
+        "processing",
+        "synthesis"
+      ],
+      "children": [
+        {
+          "name": "Casting and Solidification",
+          "description": "Melt processing, segregation, solidification structures, and defects.",
+          "tags": [
+            "casting"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/casting-and-solidification"
+        },
+        {
+          "name": "Thermomechanical Processing",
+          "description": "Rolling, forging, extrusion, and texture/microstructure evolution.",
+          "tags": [
+            "rolling",
+            "forging"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/thermomechanical-processing"
+        },
+        {
+          "name": "Heat Treatment",
+          "description": "Annealing, quenching, tempering, solution treatment, and aging.",
+          "tags": [
+            "heat treatment"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/heat-treatment"
+        },
+        {
+          "name": "Powder Processing and Sintering",
+          "description": "Powder metallurgy, compaction, sintering, SPS, hot pressing, and densification.",
+          "tags": [
+            "powder metallurgy",
+            "sintering"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/powder-processing-and-sintering"
+        },
+        {
+          "name": "Thin Films and Surface Deposition",
+          "description": "Growth and deposition of coatings and thin films for protection and functionality.",
+          "tags": [
+            "thin films",
+            "deposition"
+          ],
+          "children": [
+            {
+              "name": "CVD",
+              "description": "Chemical vapor deposition for coatings, 2D materials, semiconductors, and diamond growth.",
+              "tags": [
+                "CVD"
+              ],
+              "id": "materials-science-and-engineering/synthesis-and-processing/thin-films-and-surface-deposition/cvd"
+            },
+            {
+              "name": "PVD",
+              "description": "Physical vapor deposition, sputtering, evaporation, and related vacuum routes.",
+              "tags": [
+                "PVD"
+              ],
+              "id": "materials-science-and-engineering/synthesis-and-processing/thin-films-and-surface-deposition/pvd"
+            },
+            {
+              "name": "ALD",
+              "description": "Atomic layer deposition for conformal, thickness-controlled films.",
+              "tags": [
+                "ALD"
+              ],
+              "id": "materials-science-and-engineering/synthesis-and-processing/thin-films-and-surface-deposition/ald"
+            },
+            {
+              "name": "PLD and Epitaxy",
+              "description": "Laser-assisted and epitaxial growth routes for crystalline films.",
+              "tags": [
+                "PLD",
+                "epitaxy"
+              ],
+              "id": "materials-science-and-engineering/synthesis-and-processing/thin-films-and-surface-deposition/pld-and-epitaxy"
+            }
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/thin-films-and-surface-deposition"
+        },
+        {
+          "name": "Solution and Chemical Routes",
+          "description": "Sol-gel, hydrothermal, solvothermal, electrodeposition, and colloidal synthesis.",
+          "tags": [
+            "solution processing"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/solution-and-chemical-routes"
+        },
+        {
+          "name": "Crystal Growth",
+          "description": "Czochralski, Bridgman, vapor transport, flux growth, and specialized crystal-growth methods.",
+          "tags": [
+            "crystal growth"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/crystal-growth"
+        },
+        {
+          "name": "Additive Manufacturing",
+          "description": "Powder bed fusion, directed energy deposition, binder jetting, and printable materials systems.",
+          "tags": [
+            "AM",
+            "3D printing"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/additive-manufacturing"
+        },
+        {
+          "name": "Joining and Surface Engineering",
+          "description": "Welding, brazing, bonding, cladding, surface modification, and protective treatments.",
+          "tags": [
+            "joining",
+            "surface engineering"
+          ],
+          "id": "materials-science-and-engineering/synthesis-and-processing/joining-and-surface-engineering"
+        }
+      ],
+      "id": "materials-science-and-engineering/synthesis-and-processing"
+    },
+    {
+      "name": "Characterization and Testing",
+      "description": "How materials are observed, measured, and validated from atomic to component scale.",
+      "tags": [
+        "characterization",
+        "testing"
+      ],
+      "children": [
+        {
+          "name": "Optical Microscopy",
+          "description": "Microstructural inspection, etching contrast, and mesoscale observation.",
+          "tags": [
+            "optical microscopy"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/optical-microscopy"
+        },
+        {
+          "name": "X-ray, Neutron, and Synchrotron Methods",
+          "description": "Diffraction, scattering, imaging, local structure, and in situ studies.",
+          "tags": [
+            "XRD",
+            "neutron",
+            "synchrotron"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/x-ray-neutron-and-synchrotron-methods"
+        },
+        {
+          "name": "SEM and EBSD",
+          "description": "Surface imaging, fracture analysis, microchemistry, texture, and crystallographic mapping.",
+          "tags": [
+            "SEM",
+            "EBSD"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/sem-and-ebsd"
+        },
+        {
+          "name": "TEM and STEM",
+          "description": "Atomic- and nanoscale imaging, diffraction, spectroscopy, and defects.",
+          "tags": [
+            "TEM",
+            "STEM"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/tem-and-stem"
+        },
+        {
+          "name": "Scanning Probe Methods",
+          "description": "AFM, STM, local electronic structure, and nanoscale surface interactions.",
+          "tags": [
+            "AFM",
+            "STM"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/scanning-probe-methods"
+        },
+        {
+          "name": "Spectroscopy",
+          "description": "Raman, FTIR, UV-Vis, PL, XPS, EELS, AES, SIMS, and chemistry-sensitive analysis.",
+          "tags": [
+            "spectroscopy"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/spectroscopy"
+        },
+        {
+          "name": "Thermal Analysis",
+          "description": "DSC, TGA, DMA, dilatometry, and transformation signatures.",
+          "tags": [
+            "thermal analysis"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/thermal-analysis"
+        },
+        {
+          "name": "Mechanical Testing",
+          "description": "Tension, compression, hardness, fracture toughness, fatigue, creep, and nanoindentation.",
+          "tags": [
+            "mechanical testing"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/mechanical-testing"
+        },
+        {
+          "name": "Electrical, Magnetic, Thermal, and Electrochemical Testing",
+          "description": "Property measurements for devices, batteries, corrosion, and transport.",
+          "tags": [
+            "property testing"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/electrical-magnetic-thermal-and-electrochemical-testing"
+        },
+        {
+          "name": "In Situ and Operando Characterization",
+          "description": "Watching structure and chemistry evolve during processing or operation.",
+          "tags": [
+            "in situ",
+            "operando"
+          ],
+          "id": "materials-science-and-engineering/characterization-and-testing/in-situ-and-operando-characterization"
+        }
+      ],
+      "id": "materials-science-and-engineering/characterization-and-testing"
+    },
+    {
+      "name": "Properties and Performance",
+      "description": "What materials do in service and how scientists relate mechanisms to application behavior.",
+      "tags": [
+        "properties",
+        "performance"
+      ],
+      "children": [
+        {
+          "name": "Mechanical Behavior",
+          "description": "Elasticity, plasticity, work hardening, fatigue, creep, fracture, tribology, and failure.",
+          "tags": [
+            "mechanics"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/mechanical-behavior"
+        },
+        {
+          "name": "Electrical and Electronic Properties",
+          "description": "Conductivity, carrier transport, dielectric response, and switching behavior.",
+          "tags": [
+            "electrical"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/electrical-and-electronic-properties"
+        },
+        {
+          "name": "Thermal Properties",
+          "description": "Heat capacity, thermal conductivity, thermal expansion, and phonon transport.",
+          "tags": [
+            "thermal"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/thermal-properties"
+        },
+        {
+          "name": "Optical and Photonic Properties",
+          "description": "Absorption, emission, refractive index, band gaps, and light-matter interaction.",
+          "tags": [
+            "optical"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/optical-and-photonic-properties"
+        },
+        {
+          "name": "Magnetic Properties",
+          "description": "Magnetization, coercivity, anisotropy, spin structure, and magnetotransport.",
+          "tags": [
+            "magnetic"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/magnetic-properties"
+        },
+        {
+          "name": "Electrochemical and Catalytic Properties",
+          "description": "Redox stability, ionic transport, interfacial kinetics, and catalytic activity.",
+          "tags": [
+            "electrochemistry",
+            "catalysis"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/electrochemical-and-catalytic-properties"
+        },
+        {
+          "name": "Corrosion and Degradation",
+          "description": "Oxidation, aqueous corrosion, SCC, wear, hydrogen damage, and environmental effects.",
+          "tags": [
+            "corrosion",
+            "degradation"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/corrosion-and-degradation"
+        },
+        {
+          "name": "Reliability and Lifetime",
+          "description": "Durability, uncertainty, qualification, safe operating windows, and failure prediction.",
+          "tags": [
+            "reliability"
+          ],
+          "id": "materials-science-and-engineering/properties-and-performance/reliability-and-lifetime"
+        }
+      ],
+      "id": "materials-science-and-engineering/properties-and-performance"
+    },
+    {
+      "name": "Computational Materials",
+      "description": "Simulation, theory, digital design, and multiscale modeling across materials systems.",
+      "tags": [
+        "computation",
+        "simulation"
+      ],
+      "children": [
+        {
+          "name": "Electronic Structure and DFT",
+          "description": "First-principles calculation of bonding, stability, band structure, defects, surfaces, phonons, and response.",
+          "tags": [
+            "DFT"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/electronic-structure-and-dft"
+        },
+        {
+          "name": "Molecular Dynamics",
+          "description": "Atomistic dynamics, diffusion, thermal transport, interfaces, and deformation at short time scales.",
+          "tags": [
+            "MD"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/molecular-dynamics"
+        },
+        {
+          "name": "Monte Carlo and KMC",
+          "description": "Sampling thermodynamics, ordering, diffusion events, and long-time process pathways.",
+          "tags": [
+            "MC",
+            "KMC"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/monte-carlo-and-kmc"
+        },
+        {
+          "name": "Phase-Field Modeling",
+          "description": "Mesoscale evolution of grains, precipitates, interfaces, corrosion, fracture, and pattern formation.",
+          "tags": [
+            "phase field"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/phase-field-modeling"
+        },
+        {
+          "name": "CALPHAD and Computational Thermodynamics",
+          "description": "Thermodynamic databases, multicomponent phase stability, diffusion, and integrated process design.",
+          "tags": [
+            "CALPHAD",
+            "Thermo-Calc",
+            "DICTRA"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/calphad-and-computational-thermodynamics"
+        },
+        {
+          "name": "Finite Element Modeling",
+          "description": "Stress, heat flow, residual stress, solidification, and component-scale performance.",
+          "tags": [
+            "FEM"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/finite-element-modeling"
+        },
+        {
+          "name": "ICME and Multiscale Modeling",
+          "description": "Connecting process, structure, properties, and performance across scales.",
+          "tags": [
+            "ICME"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/icme-and-multiscale-modeling"
+        },
+        {
+          "name": "Software Ecosystem",
+          "description": "ASE, pymatgen, LAMMPS, VASP-adjacent workflows, KMC engines, and workflow automation.",
+          "tags": [
+            "ASE",
+            "pymatgen",
+            "LAMMPS"
+          ],
+          "id": "materials-science-and-engineering/computational-materials/software-ecosystem"
+        }
+      ],
+      "id": "materials-science-and-engineering/computational-materials"
+    },
+    {
+      "name": "Materials Informatics and AI",
+      "description": "Data-driven materials research, machine learning, foundation models, and scientific knowledge systems.",
+      "tags": [
+        "AI",
+        "ML",
+        "informatics"
+      ],
+      "children": [
+        {
+          "name": "Data Foundations",
+          "description": "Databases, metadata, curation, APIs, standards, benchmarks, and uncertainty.",
+          "tags": [
+            "data"
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/data-foundations"
+        },
+        {
+          "name": "Descriptors and Features",
+          "description": "Composition, structure, defect, image, graph, and Magpie-style descriptors.",
+          "tags": [
+            "features",
+            "descriptors"
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/descriptors-and-features"
+        },
+        {
+          "name": "Property Prediction",
+          "description": "Formation energy, stability, band gap, elastic, thermal, electrochemical, and catalytic prediction.",
+          "tags": [
+            "property prediction"
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/property-prediction"
+        },
+        {
+          "name": "Microstructure and Process ML",
+          "description": "Processing-structure-property surrogates, process optimization, and inverse design.",
+          "tags": [
+            "process ML"
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/microstructure-and-process-ml"
+        },
+        {
+          "name": "Generative Models for Materials",
+          "description": "Inverse design, crystal generation, molecular generation, and candidate discovery.",
+          "tags": [
+            "generative"
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/generative-models-for-materials"
+        },
+        {
+          "name": "LLMs for Materials Science",
+          "description": "Language models applied to literature mining, scientific reasoning, extraction, RAG, and materials-aware copilots.",
+          "tags": [
+            "LLM",
+            "materials NLP"
+          ],
+          "children": [
+            {
+              "name": "Literature Mining and Synthesis Extraction",
+              "description": "Extracting precursors, processing steps, conditions, and outcomes from papers and patents.",
+              "tags": [
+                "extraction"
+              ],
+              "id": "materials-science-and-engineering/materials-informatics-and-ai/llms-for-materials-science/literature-mining-and-synthesis-extraction"
+            },
+            {
+              "name": "RAG and Scientific QA",
+              "description": "Retrieval-augmented generation over papers, manuals, and structured databases.",
+              "tags": [
+                "RAG",
+                "QA"
+              ],
+              "id": "materials-science-and-engineering/materials-informatics-and-ai/llms-for-materials-science/rag-and-scientific-qa"
+            },
+            {
+              "name": "Domain Fine-Tuning and Benchmarks",
+              "description": "Task-specific adaptation, evaluation sets, and domain-grounded performance measurement.",
+              "tags": [
+                "fine-tuning",
+                "benchmarks"
+              ],
+              "id": "materials-science-and-engineering/materials-informatics-and-ai/llms-for-materials-science/domain-fine-tuning-and-benchmarks"
+            },
+            {
+              "name": "CrystaLLM and Structure-Aware Models",
+              "description": "Models that reason over crystal strings, crystal graphs, or structure-conditioned descriptions.",
+              "tags": [
+                "CrystaLLM"
+              ],
+              "id": "materials-science-and-engineering/materials-informatics-and-ai/llms-for-materials-science/crystallm-and-structure-aware-models"
+            }
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/llms-for-materials-science"
+        },
+        {
+          "name": "Ontologies and Knowledge Graphs",
+          "description": "Materials concepts, semantic schemas, ontology-guided extraction, and graph-based knowledge systems.",
+          "tags": [
+            "ontology",
+            "KG"
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/ontologies-and-knowledge-graphs"
+        },
+        {
+          "name": "Agents and Autonomous Science",
+          "description": "Closed-loop planning, tool use, lab orchestration, and human-in-the-loop scientific copilots.",
+          "tags": [
+            "agents",
+            "autonomous labs"
+          ],
+          "id": "materials-science-and-engineering/materials-informatics-and-ai/agents-and-autonomous-science"
+        }
+      ],
+      "id": "materials-science-and-engineering/materials-informatics-and-ai"
+    },
+    {
+      "name": "Material Families and Communities",
+      "description": "Large research communities often cohere around specific material families or technical ecosystems.",
+      "tags": [
+        "families",
+        "communities"
+      ],
+      "children": [
+        {
+          "name": "Steels and Advanced Alloys",
+          "description": "AHSS, stainless steels, superalloys, HEAs/MPEAs, refractory alloys, and design-intensive alloy systems.",
+          "tags": [
+            "steels",
+            "HEA"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/steels-and-advanced-alloys"
+        },
+        {
+          "name": "Carbon Materials",
+          "description": "Graphite, diamond, graphene, CNTs, activated carbons, and carbon coatings.",
+          "tags": [
+            "carbon",
+            "diamond",
+            "graphene"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/carbon-materials"
+        },
+        {
+          "name": "2D Materials",
+          "description": "h-BN, TMDs, MXenes, vdW heterostructures, and interface-engineered layered systems.",
+          "tags": [
+            "2D",
+            "h-BN"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/2d-materials"
+        },
+        {
+          "name": "Ferroelectrics and HfO2-Based Systems",
+          "description": "Polar oxides, hafnia-based ferroelectrics, domain engineering, and device integration.",
+          "tags": [
+            "HfO2",
+            "ferroelectrics"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/ferroelectrics-and-hfo2-based-systems"
+        },
+        {
+          "name": "Shape Memory and Smart Materials",
+          "description": "Shape-memory alloys, ferroics, actuators, sensors, and responsive material systems.",
+          "tags": [
+            "SMA",
+            "smart materials"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/shape-memory-and-smart-materials"
+        },
+        {
+          "name": "Batteries and Electrochemical Materials",
+          "description": "Cathodes, anodes, solid electrolytes, interfaces, and degradation science.",
+          "tags": [
+            "battery"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/batteries-and-electrochemical-materials"
+        },
+        {
+          "name": "Defects Community",
+          "description": "Defect thermodynamics, charged defects, diffusion, irradiation damage, and interface defect science.",
+          "tags": [
+            "defects"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/defects-community"
+        },
+        {
+          "name": "CALPHAD Community",
+          "description": "Phase diagrams, databases, thermodynamic modeling, and computational alloy/process design.",
+          "tags": [
+            "CALPHAD"
+          ],
+          "id": "materials-science-and-engineering/material-families-and-communities/calphad-community"
+        }
+      ],
+      "id": "materials-science-and-engineering/material-families-and-communities"
+    },
+    {
+      "name": "Applications",
+      "description": "Where materials science is used and how application needs shape design priorities.",
+      "tags": [
+        "applications"
+      ],
+      "children": [
+        {
+          "name": "Structural Engineering",
+          "description": "Buildings, infrastructure, tools, transportation, and safety-critical hardware.",
+          "tags": [
+            "structural"
+          ],
+          "id": "materials-science-and-engineering/applications/structural-engineering"
+        },
+        {
+          "name": "Aerospace Materials",
+          "description": "Lightweight, high-temperature, fatigue-resistant, and multifunctional systems.",
+          "tags": [
+            "aerospace"
+          ],
+          "id": "materials-science-and-engineering/applications/aerospace-materials"
+        },
+        {
+          "name": "Electronics and Optoelectronics",
+          "description": "Devices, memory, sensors, RF systems, photonics, and packaging.",
+          "tags": [
+            "electronics"
+          ],
+          "id": "materials-science-and-engineering/applications/electronics-and-optoelectronics"
+        },
+        {
+          "name": "Energy Systems",
+          "description": "Batteries, solar, fuel cells, hydrogen, thermoelectrics, catalysts, and nuclear systems.",
+          "tags": [
+            "energy"
+          ],
+          "id": "materials-science-and-engineering/applications/energy-systems"
+        },
+        {
+          "name": "Biomedical and Biointerfaces",
+          "description": "Implants, scaffolds, coatings, drug delivery, and biocompatibility.",
+          "tags": [
+            "biomedical"
+          ],
+          "id": "materials-science-and-engineering/applications/biomedical-and-biointerfaces"
+        },
+        {
+          "name": "Environment and Sustainability",
+          "description": "Carbon capture, membranes, circularity, corrosion mitigation, and critical materials.",
+          "tags": [
+            "sustainability"
+          ],
+          "id": "materials-science-and-engineering/applications/environment-and-sustainability"
+        },
+        {
+          "name": "Manufacturing and Digital Twins",
+          "description": "Materials selection, quality control, certification, and digital manufacturing workflows.",
+          "tags": [
+            "manufacturing"
+          ],
+          "id": "materials-science-and-engineering/applications/manufacturing-and-digital-twins"
+        }
+      ],
+      "id": "materials-science-and-engineering/applications"
+    },
+    {
+      "name": "Research Frontiers",
+      "description": "Fast-moving areas where new methods, material systems, and scientific workflows are actively emerging.",
+      "tags": [
+        "frontiers"
+      ],
+      "children": [
+        {
+          "name": "Advanced Synthesis",
+          "description": "CVD, PVD, ALD, epitaxy, autonomous synthesis, and highly controlled growth pathways.",
+          "tags": [
+            "synthesis frontier"
+          ],
+          "id": "materials-science-and-engineering/research-frontiers/advanced-synthesis"
+        },
+        {
+          "name": "Interface and Defect Engineering",
+          "description": "Using interfaces and defects as design levers for transport, catalysis, switching, and mechanics.",
+          "tags": [
+            "defect engineering"
+          ],
+          "id": "materials-science-and-engineering/research-frontiers/interface-and-defect-engineering"
+        },
+        {
+          "name": "Quantum, Spin, and Extreme Materials",
+          "description": "Condensed matter at extremes, superconductivity, topological behavior, scattering, and phonons under extreme conditions.",
+          "tags": [
+            "quantum",
+            "extremes"
+          ],
+          "id": "materials-science-and-engineering/research-frontiers/quantum-spin-and-extreme-materials"
+        },
+        {
+          "name": "Sustainable and Circular Materials",
+          "description": "Low-carbon processing, recyclable systems, critical-mineral substitution, and lifecycle-aware design.",
+          "tags": [
+            "sustainability"
+          ],
+          "id": "materials-science-and-engineering/research-frontiers/sustainable-and-circular-materials"
+        },
+        {
+          "name": "Digital and Autonomous Laboratories",
+          "description": "Robotics, simulation-in-the-loop, AI planning, active learning, and self-driving materials workflows.",
+          "tags": [
+            "autonomous labs"
+          ],
+          "id": "materials-science-and-engineering/research-frontiers/digital-and-autonomous-laboratories"
+        },
+        {
+          "name": "Foundation Models for Science",
+          "description": "Multimodal scientific models, materials-aware LLMs, and integrated text-structure-image reasoning.",
+          "tags": [
+            "foundation models"
+          ],
+          "id": "materials-science-and-engineering/research-frontiers/foundation-models-for-science"
+        }
+      ],
+      "id": "materials-science-and-engineering/research-frontiers"
+    }
+  ],
+  "id": "materials-science-and-engineering"
+}
