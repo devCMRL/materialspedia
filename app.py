@@ -226,10 +226,10 @@ with st.expander("About this starter app"):
     )
     st.write(
         """
-        Good next upgrades:
-        1. Add a true interactive graph view.
-        2. Add markdown notes pages per topic.
-        3. Add citations, links, and paper/software cards.
-        4. Split the map into curriculum mode, research mode, and career mode.
+        Upcoming upgrades:
+        1. True interactive graph view.
+        2. Notes pages per topic.
+        3. Citations, links, and paper/software cards.
+        4. Map categorization into curriculum mode, research mode, and career mode.
         """
     )
