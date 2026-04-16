@@ -219,9 +219,7 @@ st.divider()
 with st.expander("About this starter app"):
     st.write(
         """
-        This first version is intentionally simple so it is easy to deploy on Streamlit Community Cloud.
-        The knowledge map is stored in a JSON file, the UI uses the sidebar for search and filters,
-        and the main area works as a drill-down explorer.
+        This is version 1.0, I will launch V 1.1 soon.
         """
     )
     st.write(
