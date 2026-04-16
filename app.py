@@ -243,9 +243,15 @@ with left:
                     )
     else:
         st.success("This is currently a leaf topic. You can go back to the parent or search for another branch.")
-
-    st.markdown("### Local tree preview")
-    preview_lines = subtree_preview(selected, max_depth=2)
+        
+    with st.expander("Local tree preview", expanded=False):
+    preview_depth = st.selectbox(
+        "Preview depth",
+        options=[1, 2, 3, 4],
+        index=1,
+        key=f"preview_depth_{selected['id']}",
+    )
+    preview_lines = subtree_preview(selected, max_depth=preview_depth)
     st.code("\n".join(preview_lines), language="text")
 
 with right:
